@@ -1,32 +1,175 @@
-<header class="site-header" role="banner">
-
-  <div class="wrapper">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-
-    {%- if page_paths -%}
-      <nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
-
-        <div class="trigger">
-          {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {%- endif -%}
-          {% endfor -%}
+<header id="header-transparent">
+        <div class="layer-stretch hdr-center">
+            <div class="row align-items-center">
+                <div class="col-5 d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                    <div class="hdr-center-account text-left p-0">
+                        <a class="font-14 mr-4"><i class="fa fa-sign-in"></i>Se connecter</a>
+                        <a class="font-14"><i class="fa fa-user-o"></i>Creer un compte</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hdr-center-logo text-center">
+                        <a href="http://pepdev.com/template/klinik/blue/index.html" class="d-inline-block"><img src="./clinik_files/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-5 d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                    <div class="pull-right">
+                        <ul class="social-list social-list-white">
+                            <li>
+                                <a href="#" id="hdr-facebook" class="fa fa-facebook rounded" tabindex="0"></a>
+                                <span class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="hdr-facebook" data-upgraded=",MaterialTooltip">Facebook</span>
+                            </li>
+                            <li>
+                                <a href="#" id="hdr-twitter" class="fa fa-twitter rounded" tabindex="0"></a>
+                                <span class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="hdr-twitter" data-upgraded=",MaterialTooltip">Twitter</span>
+                            </li>
+                            <li>
+                                <a href="#" id="hdr-google" class="fa fa-google rounded" tabindex="0"></a>
+                                <span class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="hdr-google" data-upgraded=",MaterialTooltip">Google</span>
+                            </li>
+                            <li>
+                                <a href="#" id="hdr-instagram" class="fa fa-instagram rounded" tabindex="0"></a>
+                                <span class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="hdr-instagram" data-upgraded=",MaterialTooltip">Instagram</span>
+                            </li>
+                            <li>
+                                <a href="#" id="hdr-youtube" class="fa fa-youtube rounded" tabindex="0"></a>
+                                <span class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="hdr-youtube" data-upgraded=",MaterialTooltip">Youtube</span>
+                            </li>
+                            <li>
+                                <a href="#" id="hdr-linkedin" class="fa fa-linkedin rounded" tabindex="0"></a>
+                                <span class="mdl-tooltip mdl-tooltip--bottom" data-mdl-for="hdr-linkedin" data-upgraded=",MaterialTooltip">Linkedin</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </nav>
-    {%- endif -%}
-  </div>
-</header>
+        <div class="header-transparent-menu" style="z-index: 1000;">
+            <div class="hdr layer-stretch">
+                <div class="row align-items-center justify-content-end">
+                    <!-- Start Menu Section -->
+                    <ul class="col menu text-left" style="display: block; left: inherit;">
+                        <li>
+                            <a href="/"  id="menu-home" class="mdl-button mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">Acceuil</a>
+                            
+                        </li>
+                        <li class="menu-megamenu-li">
+                            <a id="menu-pages" class="mdl-button mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">Pages <i class="fa fa-chevron-down"></i><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+                            <ul class="menu-megamenu">
+                                <li class="row">
+                                    <div class="col-lg-3">
+                                        <div class="megamenu-ttl">Evenements</div>
+                                        <ul>
+                                            <li><a href="#" target="blank">Evenement 1</a></li>
+                                            <li><a href="#" target="blank">Evenement 2</a></li>
+                                            <li><a href="#" target="blank">Evenement 3</a></li>
+                                            <li><a href="#">FAQ</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="megamenu-ttl">Departements</div>
+                                        <ul>
+                                            <li><a href="#" target="blank">Department 1</a></li>
+                                            <li><a href="#" target="blank">Department 2</a></li>
+                                            <li><a href="#" target="blank">Gallerie 1</a></li>
+                                            <li><a href="#" target="blank">Gallerie 2</a></li>                                     
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="megamenu-ttl">Autres</div>
+                                        <ul>
+                                            <li><a href="#">A propos</a></li>
+                                            <li><a href="#">Contact</a></li>
+                                            <li><a href="#">Facture</a></li>
+                                            <li><a href="#" target="blank">Termes &amp; Conditions</a></li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="theme-img">
+                                            <img src="./clinik_files/service-5.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </li> 
+                            </ul>
+                        </li>
+                        <li>
+                            <a id="menu-service" class="mdl-button mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">Services <i class="fa fa-chevron-down"></i><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+                            <ul class="menu-dropdown">
+                                
+                              <li><a href="#" target="blank">Service 1</a></li>
+                              
+                          
+                              <li><a href="#" target="blank">Service 2</a></li>
+                             
+                          
+                      
+                              <li><a href="#" target="blank">Service 3</a></li>
+                          
+                     
+                              <li><a href="#" target="blank">Service 4</a></li>    
+                                    
+                              <li><a href="#">Service Detail</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-megamenu-li">
+                            <a id="menu-doctor" class="mdl-button mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">Docteurs <i class="fa fa-chevron-down"></i><span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+                            <ul class="menu-megamenu">
+                                <li class="row">
+                                    <div class="col-lg-6">
+                                        <div class="megamenu-ttl">Docteurs</div>
+                                        <ul>
+                                            <li><a href="#" target="blank">Docteurs 1</a></li>
+                                            <li><a href="#" target="blank">Docteurs 2</a></li>
+                                            <li><a href="#" target="blank">Docteurs 3</a></li>
+                                            
+                                            <li><a href="#" target="blank">Docteur detaillee 1</a></li>
+                                            <li><a href="#" target="blank">Docteur detaillee 2</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-6 d-none d-sm-none s-md-none d-lg-block d-xl-block">
+                                        <div class="megamenu-ttl">Competences</div>
+                                        <div class="doctor-skills mt-2">
+                                            <p class="font-14">Chirurgie<span class="badge badge-primary badge-pill float-right">100%</span></p>
+                                            <div class="progress progress-sm mb-4">
+                                                <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="doctor-skills">
+                                            <p class="font-14">Coeurs<span class="badge badge-danger badge-pill float-right">100%</span></p>
+                                            <div class="progress progress-sm mb-4">
+                                                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow=100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="doctor-skills">
+                                            <p class="font-14">Generaliste <span class="badge badge-warning badge-pill float-right">100%</span></p>
+                                            <div class="progress progress-sm mb-4">
+                                                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        
+                        
+                        </li>
+                        <li class="mobile-menu-close"><i class="fa fa-times"></i></li>
+                    </ul><!-- End Menu Section -->
+                    <div class="col col-md-auto d-none d-sm-block d-md-block d-lg-block d-xl-block">
+                        <button class="mdl-button mdl-button--colored mdl-button--raised mdl-js-button mdl-js-ripple-effect hdr-apointment" data-upgraded=",MaterialButton,MaterialRipple"><i class="fa fa-calendar m-0 color-white"></i> Prendre un rendez-vous<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+                    </div>
+                    <div class="col-2 col-md-auto col-lg-auto">
+                        <div class="mdl-button mdl-js-button mdl-button--fab hdr-search" data-upgraded=",MaterialButton">
+                            <i class="fa fa-search fa-2x color-white"></i>
+                        </div>
+                    </div>
+                    <div id="menu-bar" class="col-2 col-md-auto"><a><i class="fa fa-bars color-white"></i></a></div>
+                </div>
+                <div class="search-banner animated fadeInUp">
+                    <input type="text" placeholder="Search your Query ...">
+                </div>
+            </div>
+        </div><div></div>
+    </header><!-- End Header Section -->

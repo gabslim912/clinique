@@ -1,35 +1,139 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+<!-- Start Emergency Section -->
+    <div id="emergency">
+        <div class="layer-stretch">
+            <div class="layer-wrapper">
+                <div class="layer-ttl">
+                    <h3>En cas d'urgence</h3>
+                </div>
+                <div class="layer-container">
+                    <div class="paragraph-medium paragraph-black">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.
+                    </div>
+                    <div class="emergency-number">Appeler au : 77 477 22 22</div>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Emergency Section -->
+    <footer id="footer">
+        <div class="layer-stretch">
+            <!-- Start main Footer Section -->
+            <div class="row layer-wrapper">
+                <div class="col-md-6 footer-block">
+                    <div class="footer-ttl"><p>Infos</p></div>
+                    <div class="footer-container footer-a">
+                        <div class="tbl">
+                            <div class="tbl-row">
+                                <div class="tbl-cell"><i class="fa fa-map-marker"></i></div>
+                                <div class="tbl-cell">
+                                    <p class="paragraph-medium paragraph-white">
+                                       Hann Maristes II<br>
+                                        Rue ALMAMY DIOP<br>
+                                        Dakar, Senegal
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tbl-row">
+                                <div class="tbl-cell"><i class="fa fa-phone"></i></div>
+                                <div class="tbl-cell">
+                                    <p class="paragraph-medium paragraph-white">77 444 55 22</p>
+                                </div>
+                            </div>
+                            <div class="tbl-row">
+                                <div class="tbl-cell"><i class="fa fa-envelope"></i></div>
+                                <div class="tbl-cell">
+                                    <p class="paragraph-medium paragraph-white">hello@yourdomain.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-md-6 footer-block">
+                    <div class="footer-ttl"><p>Newsletter</p></div>
+                    <div class="footer-container footer-c">
+                        <div class="footer-subscribe">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input is-upgraded" data-upgraded=",MaterialTextfield">
+                                <input class="mdl-textfield__input" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="subscribe-email">
+                                <label class="mdl-textfield__label" for="subscribe-email">Entrer votre Email</label>
+                                <span class="mdl-textfield__error">Please Enter Valid Email!</span>
+                            </div>
+                            <div class="footer-subscribe-button">
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary" data-upgraded=",MaterialButton,MaterialRipple">S'inscrire<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+                            </div>
+                        </div>
+                        <ul class="social-list social-list-colored footer-social">
+                            <li>
+                                <a href="#" target="_blank" id="footer-facebook" class="fa fa-facebook" tabindex="0"></a>
+                                <span class="mdl-tooltip mdl-tooltip--top" data-mdl-for="footer-facebook" data-upgraded=",MaterialTooltip">Facebook</span>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" id="footer-twitter" class="fa fa-twitter" tabindex="0"></a>
+                                <span class="mdl-tooltip mdl-tooltip--top" data-mdl-for="footer-twitter" data-upgraded=",MaterialTooltip">Twitter</span>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" id="footer-google" class="fa fa-google" tabindex="0"></a>
+                                <span class="mdl-tooltip mdl-tooltip--top" data-mdl-for="footer-google" data-upgraded=",MaterialTooltip">Google</span>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" id="footer-instagram" class="fa fa-instagram" tabindex="0"></a>
+                                <span class="mdl-tooltip mdl-tooltip--top" data-mdl-for="footer-instagram" data-upgraded=",MaterialTooltip">Instagram</span>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" id="footer-youtube" class="fa fa-youtube" tabindex="0"></a>
+                                <span class="mdl-tooltip mdl-tooltip--top" data-mdl-for="footer-youtube" data-upgraded=",MaterialTooltip">Youtube</span>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" id="footer-linkedin" class="fa fa-linkedin" tabindex="0"></a>
+                                <span class="mdl-tooltip mdl-tooltip--top" data-mdl-for="footer-linkedin" data-upgraded=",MaterialTooltip">Linkedin</span>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" id="footer-flickr" class="fa fa-flickr" tabindex="0"></a>
+                                <span class="mdl-tooltip mdl-tooltip--top" data-mdl-for="footer-flickr" data-upgraded=",MaterialTooltip">Flickr</span>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" id="footer-rss" class="fa fa-rss" tabindex="0"></a>
+                                <span class="mdl-tooltip mdl-tooltip--top" data-mdl-for="footer-rss" data-upgraded=",MaterialTooltip">Rss</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End main Footer Section -->
+        <!-- Start Copyright Section -->
+        <div id="copyright">
+            <div class="layer-stretch">
+                <div class="paragraph-medium paragraph-white">2017 ©  <a href="www.revovision.ca">REVOVISION ALL RIGHTS RESERVED.</a></div>
+            </div>
+        </div><!-- End of Copyright Section -->
+    </footer><!-- End of Footer Section -->
 
-  <div class="wrapper">
+    <!-- **********Included Scripts*********** -->
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
-
-  </div>
-
-</footer>
+      <!-- Jquery Library 2.1 JavaScript-->
+    <script src="/js/jquery-2.1.4.min.js"></script>
+    <!-- Popper JavaScript-->
+    <script src="/js/popper.min.js"></script>
+    <!-- Bootstrap Core JavaScript-->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- Material Design Lite JavaScript-->
+    <script src="/js/material.min.js"></script>
+    <!-- Material Select Field Script -->
+    <script src="/js/mdl-selectfield.min.js"></script>
+    <!-- Flexslider Plugin JavaScript-->
+    <script src="/js/jquery.flexslider.min.js"></script>
+    <!-- Owl Carousel Plugin JavaScript-->
+    <script src="/js/owl.carousel.min.js"></script>
+    <!-- Scrolltofixed Plugin JavaScript-->
+    <script src="/js/jquery-scrolltofixed.min.js"></script>
+    <!-- Magnific Popup Plugin JavaScript-->
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <!-- WayPoint Plugin JavaScript-->
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <!-- CounterUp Plugin JavaScript-->
+    <script src="/js/jquery.counterup.js"></script>
+    <!-- SmoothScroll Plugin JavaScript-->
+    <script src="/js/smoothscroll.min.js"></script>
+    <!--Custom JavaScript for Klinik Template-->
+    <script src="/js/custom.js"></script>
+</body>
+</html>
